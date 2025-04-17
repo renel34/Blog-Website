@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+
+<h1>René's Blog Page</h1>
+
+<% if (locals.posts.length === 0) { %>
+<p>No posts yet. Be the first to submit a new post!</p>
+<% } else { %> <% posts.forEach(post => { %>
+<article class="post-box">
+  <h2><%= post.title %></h2>
+  <p><%= post.content %></p>
+  <div class="post-actions">
+    <form action="/edit" method="GET">
+      <input type="hidden" name="postId" value="<%= post.id %>" />
+      <button type="submit" class="edit-btn">Edit</button>
+    </form>
+    <form action="/delete" method="POST">
+      <input type="hidden" name="postId" value="<%= post.id %>" />
+      <button type="submit" class="delete-btn">Delete</button>
+    </form>
+  </div>
+</article>
+<% }); %> <% } %> <%- include('partials/footer.ejs') %>
