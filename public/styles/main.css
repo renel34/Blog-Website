@@ -55,6 +55,10 @@ nav a {
   padding: 5px 10px;
 }
 
+a:hover {
+  background-color: #6b6a6a;
+}
+
 main {
   margin-top: 25px;
   margin-bottom: 60px;
@@ -93,13 +97,14 @@ label {
 
 button {
   background-color: #4f4e4e;
+  transition: background-color 0.3s ease;
   color: white;
   text-decoration: none;
-  margin: 10px 0 0 auto;
+  margin: 0 10px;
   font-size: 18px;
-  font-family: "Handlee", cursive;
   border-radius: 20px;
   padding: 5px 10px;
+  font-family: "Handlee", cursive;
   align-self: flex-end;
   border: none;
   cursor: pointer;
