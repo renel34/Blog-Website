@@ -45,7 +45,6 @@ app.post("/edit", (req, res) => {
     posts[postIndex].title = updatedTitle;
     posts[postIndex].content = updatedContent;
   }
-
   res.redirect("/");
 });
 
