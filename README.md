@@ -23,7 +23,7 @@
 </ul>
 <h2>Installation </h2>
 <ol>
-  <li>Clone the repository: git clone  https://github.com/your-username/blog-platform.git</li>
+  <li>Clone the repository: git clone https://github.com/renel34/Blog-Website</li>
   <li>Navigate  into the project folder: cd blog-platform</li>
   <li>Install  dependencies: npm install</li>
   <li>Start  the server: node index.js</li>
