@@ -1,8 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
+import "dotenv/config";
 
 const app = express();
-const port = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Array to store blog posts
 let posts = [];
@@ -81,6 +82,6 @@ app.post("/delete", (req, res) => {
 });
 
 // Start the server and listen for incoming requests on the specified port
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}.`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });
