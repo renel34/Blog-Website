@@ -170,19 +170,19 @@ button {
 }
 
 .edit-btn {
-  background-color: #3e9240;
+  background-color: #ad7910;
 }
 
 .delete-btn {
-  background-color: #f44336;
+  background-color: #f86635;
 }
 
 .edit-btn:hover {
-  background-color: #326935;
+  background-color: #7a550c;
 }
 
 .delete-btn:hover {
-  background-color: #b43434;
+  background-color: #c1502a;
 }
 
 #title {
