@@ -1,37 +1,175 @@
-<body>
-<h1>Blog Website</h1>
+# Blog Website
 
-<h2>Description </h2>
+A server-rendered blog application built with Node.js, Express, and EJS that allows users to create, edit, and delete blog posts through a simple and intuitive interface.
 
-<p>This  Blog Website is a simple web application that allows users to create, edit, and  delete blog posts. It was built using Node.js, Express, and EJS to practice  backend development and CRUD operations.</p>
-<h2>Features </h2>
+---
 
-<ul>
-  <li>Create new blog posts</li>
-  <li>Edit  existing posts</li>
-  <li>Delete  posts</li>
-  <li>View  all posts on the homepage</li>
-  <li>Server-side  rendering using EJS</li>
-</ul>
-<h2>Technologies Used </h2>
-<ul>
-  <li>Node.js</li>
-  <li>Express.js</li>
-  <li>EJS  (Embedded JavaScript Templates)</li>
-  <li>Body-Parser</li>
-  <li>HTML/CSS</li>
-</ul>
-<h2>Installation </h2>
-<ol>
-  <li>Clone the repository: git clone https://github.com/renel34/Blog-Website</li>
-  <li>Navigate  into the project folder: cd blog-platform</li>
-  <li>Install  dependencies: npm install</li>
-  <li>Start  the server: node index.js</li>
-  <li>Open  your browser and go to: http://localhost:3000</li>
-</ol>
-<p>Usage: To  create a new post, click on the create button and fill out the form. You can  edit or delete posts using the buttons available for each post. All posts are  stored in memory, so they will reset if the server restarts.</p>
+## Overview
 
-<p>License: This project is  open source and available under the MIT License.</p>
-<p>Contact: René Laplante - <a href="mailto:laplanter96@gmail.com">laplanter96@gmail.com</a> Project Link: <a href="https://github.com/renel34/BookNotes.git">https://github.com/renel34/Blog-Website.git</a></p>
-</body>
-</html>
+This project was created to strengthen my understanding of backend web development concepts and the Model-View-Controller (MVC) style workflow commonly used in web applications.
+
+The application demonstrates how user input can be processed on the server, rendered dynamically using EJS templates, and managed through CRUD operations.
+
+---
+
+## Features
+
+- Create new blog posts
+- View all blog posts on the homepage
+- Edit existing posts
+- Delete posts
+- Dynamic page rendering using EJS
+- Reusable page layouts using EJS partials
+- Static asset management with Express
+- Environment variable support using dotenv
+
+---
+
+## Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| Node.js | JavaScript Runtime |
+| Express.js | Web Framework |
+| EJS | Server-Side Templating |
+| Body-Parser | Form Data Processing |
+| Dotenv | Environment Variable Management |
+| HTML5 | Markup |
+| CSS3 | Styling |
+
+---
+
+## Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+- Server-side web development
+- CRUD application design
+- Express routing
+- Middleware configuration
+- Dynamic template rendering
+- Form handling and data processing
+- Static file serving
+- Git and GitHub version control
+- Project organization and code structure
+
+---
+
+## Project Structure
+
+```text
+Blog-Website
+│
+├── public/
+│   ├── pictures/
+│   └── styles/
+│
+├── views/
+│   ├── partials/
+│   │   ├── header.ejs
+│   │   └── footer.ejs
+│   ├── create.ejs
+│   ├── edit.ejs
+│   └── index.ejs
+│
+├── index.js
+├── package.json
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/renel34/Blog-Website.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd Blog-Website
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the application:
+
+```bash
+node index.js
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## How It Works
+
+The application stores blog posts in an in-memory JavaScript array.
+
+Each post contains:
+
+- Unique timestamp-based identifier
+- Title
+- Content
+
+Users can:
+
+1. Create a post using the Create page.
+2. View all posts on the homepage.
+3. Edit an existing post.
+4. Delete a post.
+
+Changes are immediately reflected through dynamic server-side rendering.
+
+---
+
+## Current Limitations
+
+This project was designed as a learning exercise and currently stores all blog posts in memory.
+
+Because of this:
+
+- Data is not persisted after server restart.
+- No user authentication is implemented.
+- No database integration currently exists.
+
+---
+
+## What I Learned
+
+Through this project I gained hands-on experience with:
+
+- Express application structure
+- Route handling
+- HTTP GET and POST requests
+- Dynamic content rendering with EJS
+- Form submission processing
+- Middleware usage
+- Organizing reusable view components with partials
+
+---
+
+## Author
+
+**René Laplante**
+
+- Email: laplanter96@gmail.com
+- GitHub: https://github.com/renel34
+- Portfolio: *(Add your portfolio URL here)*
+
+---
+
+## License
+
+This project is licensed under the MIT License.
